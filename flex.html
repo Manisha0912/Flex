@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            font-size: 20px;
+        }
     
 .nav{
     background-color: white;
@@ -28,18 +31,20 @@
         
             .images{
             display: flex;
-            gap: 70px;
+            gap: 20px;
             flex-wrap:wrap;
-            align-content: center;
-            margin: 60px;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
         
         }
         .container{
             display: flex;
-            gap: 70px;
+            gap: 20px;
             flex-wrap:wrap;
-        align-content: center;
-        margin: 60px;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
         }
         .numbering{
 
@@ -50,7 +55,12 @@
             font-size: 30px;
             margin: 60px;
         }
-        .link hover{
+        .link{
+            text-decoration: none;
+        }
+        
+        .link:hover{
+
             text-decoration: none;
             background-color: black;
             color: white;
@@ -71,7 +81,7 @@
           flex-direction: row;
             gap: 350px;
             margin: 60px;  
-
+justify-content: center;
         }
         .foot2{
             display: flex;
@@ -147,24 +157,26 @@
 </div>
     </div>
     <div class="numbering">
-        <div class="w3-bar">
-          <a class="link" href="#" >«</a>
-          <a class="link" href="#" style="background-color: black;" >1</a>
-          <a class="link" href="#">2</a>
-          <a class="link" href="#">3</a>
-          <a class="link" href="#">4</a>
-          <a class="link" href="#">»</a>
+        <div id="div2" style="text-align: center;" >
+            &lt; &lt;
+            <a class="link" href="#" >«</a>
+            <a class="link"  href="#food" style="background-color: black; color: white;">1</a>&nbsp;
+            <a class="link" href="#food">2</a>&nbsp;
+            <a  class="link" href="#food">3</a>&nbsp;&nbsp;
+            <a class="link" href="#food">4</a>&nbsp;
+            <a class="link" href="#">»</a>
+            &gt; &gt;
         </div>
     </div>
       <hr>
 <div class="about"></div>
 <div class="w3">  
-    <h3 style="font-size: 30px;">About Me, The Food Man</h3><br>
+    <h2 style="font-size: 30px;">About Me, The Food Man</h2><br>
     <img src="https://www.w3schools.com/w3images/chef.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
     <div class="w5S">
-      <h4><b>I am Who I Am!</b></h4>
-      <h6><i>With Passion For Real, Good Food</i></h6>
-      <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <h3><b>I am Who I Am!</b></h3>
+      <h6><i style="font-size: large;">With Passion For Real, Good Food</i></h6>
+      <p >Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog.<br> I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, <br>ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
     </div>
     <hr>
     <footer class="ft">
@@ -172,22 +184,22 @@
         <span>Praesent tincidunt sed<br> tellus ut rutrum. Sed <br>vitae justo condimentum,<br> porta lectus vitae, <br>ultricies congue gravida<br> diam non fringilla.<br></span>
         <br>
         <br>
-        <span>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"></a></span>
+        <span>Powered by <a href="" target="_blank">w3.css</a></span>
     </div>
-    <div class="foot2">
+    <span class="foot2">
         <h3>BLOG POSTS</h3>
         <img src="https://www.w3schools.com/w3images/workshop.jpg" height="50px" width="55px">Lorem<br>
 Sed mattis <br>nunc<br><hr>
 <img  src="https://www.w3schools.com/w3images/gondol.jpg"  height="50px" width="55px">Ipsum<br>
 Praes tinci<br> sed
-        </div>
+    </span>
         <div class="foot3">
         <h3>POPULAR TAGS</h3>
-        <pre>
+        <span>
         <button>Travel</button>  <button>New York</button>  <button>Dinner</button>   <button>Salmon</button>    <button>France</button>   <button>Drinks</button>  <button>Ideas</button>  <button>Flavors</button><br>
-<button>Cuisine</button>  <button>Chicken</button>  <button>Dressing</button>  <button>Fried</button>  <button>Fish</button><br>
-<button>Duck</button>
-    </pre> 
+        <button>Cuisine</button>  <button>Chicken</button>  <button>Dressing</button>  <button>Fried</button>  <button>Fish</button><br>
+        <button>Duck</button>
+        </span>
         </div>
     </footer>
     </div>
